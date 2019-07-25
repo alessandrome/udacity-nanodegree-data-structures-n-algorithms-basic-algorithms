@@ -1,0 +1,10 @@
+Routing trie is similar to the previous made Trie structure, but in this case, Path Nodes should store partial paths and not single characters.
+Middle paths (nodes between start to end) simply doesn't have an handler if they're not set as visitable path
+
+Time complexity:
+    - RouterNode.insert: O(n) => The complexity depends on the length of the list created from the splitted passed path. Then the process is equal to normal TrieNode insert but that use a list of words and not the chars in a word to create the path
+    - Router.lookup: O(n) => The complexity depends, as the above description, from the splitted passed path to lookup
+
+Space complexity:
+    - RouterNode.insert: O(n) => The complexity depends on the length of the list created from the splitted passed path as the function call itself for each partial path
+    - Router.lookup: O(1) => The function doesn't require auxiliary data structures and the research is made with a iterative algorithm (as find function of the Trie in a previous exercise)

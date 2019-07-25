@@ -1,0 +1,12 @@
+The trie is built dividing the word in a list of its characters and make a road from to last character passing for every node representing a character in the word,
+Trie Node store a boolean to check if they represent the final node of a word or are just passage nodes. This boolean permit to add words that use partial roads present in the Trie yet.
+
+Time complexity:
+    - Trie.find: O(n) => to find a prefix node is needed pass through every character of the word to check if the correspondent TrieNode exists
+    - TrieNode.insert: O(n) => the insert require to pass through every character of the word to be insert
+    - TrieNode.suffixes: O(n^2) => retrieve words that have the the used TrieNode as suffix, check recursively in all children nodes and add the suffixes to the list when is find a Trie Node marked as word
+
+Space complexity:
+    - Trie.find: O(1) => The linear and iterative function permit to not use auxiliary data structures
+    - TrieNode.insert: O(n) => The memory necessary is linear dependent from the word length to insert as from it depends how many time the recursion function call itself
+    - TrieNode.suffixes: O(n) => Every node could have various children (1 for each character linked to the node) and to get all suffixes, these must be traversed and maximum recursion chain depends on the longest path from the starting node and the most long suffix word

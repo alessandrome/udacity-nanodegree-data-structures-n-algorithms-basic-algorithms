@@ -1,0 +1,7 @@
+The algorithm used is very simple and for each step through the list, value is compared the min and max values found till then.
+
+Time complexity:
+    - get_min_max: O(n) => the array is traversed only one and doesn't require to be sorted or other special operations
+
+Space complexity:
+    - get_min_max: O(1) => algorithm doesn't require any auxiliary data structure during the process

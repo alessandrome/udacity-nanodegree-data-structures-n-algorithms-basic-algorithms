@@ -1,0 +1,7 @@
+To solve this problem, solution proposed and explanation of integer square root come from the study of the Integer Square Root wikipedia page (https://en.wikipedia.org/wiki/Integer_square_root)
+
+Time complexity:
+    - isqrt: O(log2(n))
+
+Space complexity:
+    - isqrt: O(1) => With iterative solution no extra data structures are needed

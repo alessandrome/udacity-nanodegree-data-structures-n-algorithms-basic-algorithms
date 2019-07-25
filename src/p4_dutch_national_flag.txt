@@ -1,0 +1,7 @@
+This exercise has been based on an exercise made on udacity in this course.
+
+Time complexity:
+    - sort_012: O(n) => the sorting function pass through the array only one time mantaining info about the index of the last starting 0s in the array and the first index of final 2s
+
+Space complexity:
+    - sort_012: O(1) => The algorithm not required extra data structures to store auxilary data

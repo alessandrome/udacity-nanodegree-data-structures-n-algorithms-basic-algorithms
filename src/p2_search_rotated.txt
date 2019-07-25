@@ -1,0 +1,8 @@
+In used function to search an element in a (possible) rotated array is necessary to consider what to do when extreme elements of the selected sub-list are ordered or not.
+Other than that, though, the algorithm is similar to a regular binary search.
+
+Time complexity:
+    - rotated_array_search: O(log2(n)) => The research use the same working thread of a normal binary search but considering the ordering position between start, middle and last element of the passed array
+
+Space complexity:
+    - rotated_array_search: O(1) => Auxiliary data structure are not needed in iterative solution

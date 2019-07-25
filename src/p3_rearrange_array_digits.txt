@@ -1,0 +1,8 @@
+Resource about heapsort on Udacity has been used to complete this exercise
+
+Time complexity:
+    - rearrange_digits: O(n*log(n)) => The time complexity depends on used order function complexity (heapsort in this case), because to make the two sums a sorted array is needed.
+        After the sorting, the sum is made taking
+
+Time complexity:
+    - rearrange_digits: O(1) => Auxiliary memory needed is not depending on heapsort and the given array
